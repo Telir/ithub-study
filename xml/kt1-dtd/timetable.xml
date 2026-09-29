@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE timeTable SYSTEM "timetable.dtd">
+<timeTable>
+    <complexes>
+        <complex code="c1">
+            <name>Учебный комплекс «Центральный»</name>
+            <address>Москва, ул. Полтавская, д. 18</address>
+        </complex>
+        <complex code="c2">
+            <name>Учебный комплекс «Южный»</name>
+            <address>Москва, Нагатинская наб., д. 54</address>
+        </complex>
+        <complex code="c3">
+            <name>Учебный комплекс «Северный»</name>
+            <address>Москва, Дмитровское ш., д. 27</address>
+        </complex>
+    </complexes>
+    <lessons>
+        <lesson no="1" complex="c1">
+            <date>2026-09-29</date>
+            <time>09:00</time>
+        </lesson>
+        <lesson no="2" complex="c1">
+            <date>2026-09-29</date>
+            <time>10:40</time>
+        </lesson>
+        <lesson no="3" complex="c2">
+            <date>2026-09-30</date>
+            <time>12:30</time>
+        </lesson>
+        <lesson no="4" complex="c3">
+            <date>2026-10-01</date>
+            <time>14:10</time>
+        </lesson>
+    </lessons>
+</timeTable>
