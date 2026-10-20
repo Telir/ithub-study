@@ -7,3 +7,4 @@ IThub, группа 2П1.25.
 | Работа | Что сделано |
 |---|---|
 | [КТ: DTD](xml/kt1-dtd/) | DTD для документа `timeTable` и валидный ему XML-документ |
+| [КТ: XML Schema](xml/kt2-xsd/) | XML Schema для документа `notebook` и валидный ей XML-документ |

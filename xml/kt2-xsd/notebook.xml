@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notebook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="notebook.xsd">
+    <offices>
+        <office code="o1">Центральный офис</office>
+        <office code="o2">Южный офис</office>
+        <office code="o3">Северный офис</office>
+    </offices>
+    <person id="p1" office="o1">
+        <name>
+            <first>Матвей</first>
+            <surname>Мощенко</surname>
+        </name>
+        <address>
+            <city>Москва</city>
+            <street>Полтавская, д. 18</street>
+            <index>127287</index>
+        </address>
+        <phones>
+            <phone type="work">495-11-22</phone>
+            <phone type="home">499-33-44</phone>
+        </phones>
+    </person>
+    <person id="p2" office="o2">
+        <name>
+            <first>Анна</first>
+            <surname>Лисова</surname>
+        </name>
+        <address>
+            <index>115230</index>
+            <city>Москва</city>
+            <street>Нагатинская набережная, д. 54</street>
+        </address>
+        <phones>
+            <phone>495-55-66</phone>
+        </phones>
+    </person>
+    <person id="p3" office="o1">
+        <name>
+            <first>Игорь</first>
+            <surname>Громов</surname>
+        </name>
+        <address>
+            <street>Дмитровское шоссе, д. 27</street>
+            <index>127486</index>
+            <city>Москва</city>
+        </address>
+        <phones/>
+    </person>
+</notebook>
