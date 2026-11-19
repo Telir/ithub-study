@@ -1,0 +1,164 @@
+:root {
+  --accent: #6dadbf;
+  --blob: #aecdd8;
+  --text: #808080;
+  --footer-bg: #333;
+  --card-width: 353px;
+  --gap: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #111;
+}
+
+.header {
+  height: 80px;
+  background: #fff;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1180px) {
+  .header__inner {
+    padding: 0 24px;
+  }
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #000;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 228px 24px 60px;
+  background: var(--accent);
+}
+
+.hero__blob {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 1120px;
+  height: 1002px;
+  max-width: none;
+  transform: translateX(-50%);
+  fill: var(--blob);
+}
+
+.cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, var(--card-width));
+  gap: var(--gap);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 20px 30px;
+  background: #fff;
+  border: 3px solid var(--accent);
+  border-radius: 20px 0;
+}
+
+.card__number {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.card__text {
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.footer {
+  padding: 16px 24px;
+  background: var(--footer-bg);
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero__blob {
+    width: 900px;
+    height: 1100px;
+  }
+
+  .cards {
+    grid-template-columns: minmax(0, var(--card-width));
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 16px 40px;
+  }
+
+  .hero__blob {
+    top: 20px;
+    width: 140%;
+  }
+
+  .card__number {
+    font-size: 40px;
+  }
+
+  .card__text {
+    font-size: 16px;
+  }
+}
