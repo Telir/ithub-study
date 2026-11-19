@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .car {
+      position: absolute;
+      left: -200px;
+      top: 200px;
+      width: 200px;
+      height: 50px;
+      background: red;
+      border-radius: 10px;
+      animation: drive 4s ease-out forwards;
+    }
+
+    .car::before {
+      content: "";
+      position: absolute;
+      left: 40px;
+      top: -30px;
+      width: 110px;
+      height: 30px;
+      background: lightblue;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .car::after {
+      content: "";
+      position: absolute;
+      left: 25px;
+      top: 35px;
+      width: 36px;
+      height: 36px;
+      background: black;
+      border-radius: 50%;
+      box-shadow: 114px 0 black;
+    }
+
+    @keyframes drive {
+      to { transform: translateX(calc(100vw - 50px)); }
+    }
+  </style>
+</head>
+<body>
+  <div class="car"></div>
+</body>
+</html>
